@@ -16,8 +16,17 @@ app.use('/public',express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+
+//routes
+
 app.get('/', (req, res)=> {
     res.render('contact');
 })
 
-app.listen(8000);
+app.post('/send', (req, res) => {
+    console.log(req.body);
+    res.render('contact', {msg:'Email has been sent'});
+}
+);
+
+app.listen(8000,()=>{console.log("server started")});
