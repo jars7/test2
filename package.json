@@ -1,0 +1,27 @@
+{
+  "name": "test2",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jars7/test2.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Jon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jars7/test2/issues"
+  },
+  "homepage": "https://github.com/jars7/test2#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0"
+  }
+}
